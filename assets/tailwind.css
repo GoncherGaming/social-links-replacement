@@ -173,29 +173,14 @@
   }
 }
 @layer utilities {
-  .relative {
-    position: relative;
+  .visible {
+    visibility: visible;
+  }
+  .static {
+    position: static;
   }
   .col-start-2 {
     grid-column-start: 2;
-  }
-  .container {
-    width: 100%;
-    @media (width >= 40rem) {
-      max-width: 40rem;
-    }
-    @media (width >= 48rem) {
-      max-width: 48rem;
-    }
-    @media (width >= 64rem) {
-      max-width: 64rem;
-    }
-    @media (width >= 80rem) {
-      max-width: 80rem;
-    }
-    @media (width >= 96rem) {
-      max-width: 96rem;
-    }
   }
   .mb-3\.75 {
     margin-bottom: calc(var(--spacing) * 3.75);
@@ -203,11 +188,20 @@
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
+  .block {
+    display: block;
+  }
   .flex {
     display: flex;
   }
   .grid {
     display: grid;
+  }
+  .hidden {
+    display: none;
+  }
+  .inline {
+    display: inline;
   }
   .h-6 {
     height: calc(var(--spacing) * 6);
@@ -238,6 +232,9 @@
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-\[3rem_1fr_3rem\] {
     grid-template-columns: 3rem 1fr 3rem;

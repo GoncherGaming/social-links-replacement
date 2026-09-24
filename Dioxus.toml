@@ -4,7 +4,7 @@ default_platform = "web"
 [web.app]
 
 # HTML title tag content
-title = "Social Links"
+title = "GoncherGaming's Social Links"
 
 # include `assets` in web platform
 [web.resource]
