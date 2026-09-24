@@ -1,0 +1,21 @@
+[application]
+name = "social_links"
+[web.app]
+
+# HTML title tag content
+title = "social_links"
+
+# include `assets` in web platform
+[web.resource]
+assets = "assets"
+# Additional CSS style files
+style = ["tailwind.css"]
+
+# Additional JavaScript files
+script = []
+
+[web.resource.dev]
+
+# Javascript code file
+# serve: [dev-server] only
+script = []
