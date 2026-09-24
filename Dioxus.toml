@@ -1,9 +1,10 @@
 [application]
-name = "social_links"
+name = "social-links-replacement"
+default_platform = "web"
 [web.app]
 
 # HTML title tag content
-title = "social_links"
+title = "Social Links"
 
 # include `assets` in web platform
 [web.resource]
@@ -15,6 +16,9 @@ style = ["tailwind.css"]
 script = []
 
 [web.resource.dev]
+
+[web.watcher]
+out_dir = "dist"
 
 # Javascript code file
 # serve: [dev-server] only
